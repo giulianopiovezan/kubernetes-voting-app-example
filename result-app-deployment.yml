@@ -12,12 +12,12 @@ spec:
       app: demo-voting-app
   template:
     metadata:
-    name: result-app-pod
-    labels:
       name: result-app-pod
-      app: demo-voting-app
-  spec:
-    containers:
-      - name: result-app
-        image: dockersamples/examplevotingapp_result
-    
+      labels:
+        name: result-app-pod
+        app: demo-voting-app
+    spec:
+      containers:
+        - name: result-app
+          image: dockersamples/examplevotingapp_result
+      
